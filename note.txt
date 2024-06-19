@@ -1,0 +1,3 @@
+javaScript update and changes HTML and CSS
+
+js can calculate  validate and manipulate data
