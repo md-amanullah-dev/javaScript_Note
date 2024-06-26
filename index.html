@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div id="test">this is test</div>
-    <div class="test">this is test</div>
-    <div class="test">this is test</div>
-    <div class="test">this is test</div>
-    <div class="test">this is test</div>
-    <button  id="btn" onclick="printH2()">Add</button>
-    <button  id="delete" onclick="deleteH2()">Delete</button>
-    <script src="/dom.js"></script>
-</body>
+    <style>
+      #myInput {
+        padding: 20px;
+        border: solid gray 1px;
+        height: 15px;
+        width: 300px;
+      }
+
+      #btn {
+        padding: 10px;
+        height: 45px;
+        width: 100px;
+        background: blue;
+        color: wheat;
+        font-weight: bold;
+        border: solid gray 1px;
+      }
+
+      #deleteBtn {
+        padding: 10px;
+        height: 45px;
+        width: 100px;
+        background: red;
+        color: wheat;
+        font-weight: bold;
+        border: solid gray 1px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input id="myInput" type="text" placeholder="Enter your name" />
+    <button id="btn" onclick="btnClick()">Add</button>
+    <button id="deleteBtn" onclick="btnDelete()">Delete</button>
+    <script src="/local_session_Storage.js"></script>
+  </body>
 </html>
